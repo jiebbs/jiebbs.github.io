@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>HeadFirst DesignPattern 第二章笔记 | jiebbs的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="半路出家的java后端一枚">
+  <meta name="description" content="原则  为交互对象之间的松耦合设计而努力  观察者模式  在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会受到通知，并自动更新  要点  观察者模式定义了对象之间一对多的关系 主题（也就是可观察者）用一个共同的接口来更新观察者 观察者和可观察者之间松耦合方式结合，可观察者不知道观察者的细节，只知道观察者实现了观察者接口 使用此模式时，你可以从被观察者处推或者拉数据（然而推">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HeadFirst DesignPattern 第二章笔记">
 <meta property="og:url" content="http://example.com/2022/07/17/HeadFirst-DesignPattern-%E7%AC%AC%E4%BA%8C%E7%AB%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="jiebbs的博客">
-<meta property="og:description" content="半路出家的java后端一枚">
+<meta property="og:description" content="原则  为交互对象之间的松耦合设计而努力  观察者模式  在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会受到通知，并自动更新  要点  观察者模式定义了对象之间一对多的关系 主题（也就是可观察者）用一个共同的接口来更新观察者 观察者和可观察者之间松耦合方式结合，可观察者不知道观察者的细节，只知道观察者实现了观察者接口 使用此模式时，你可以从被观察者处推或者拉数据（然而推">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-07-17T09:59:37.000Z">
-<meta property="article:modified_time" content="2022-07-17T09:59:37.938Z">
+<meta property="article:modified_time" content="2022-07-17T15:22:41.820Z">
 <meta property="article:author" content="jiebbs">
 <meta name="twitter:card" content="summary">
   
@@ -174,7 +174,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>原则</p>
+<ol>
+<li>为交互对象之间的松耦合设计而努力</li>
+</ol>
+<p>观察者模式</p>
+<ol>
+<li>在对象之间定义一对多的依赖，这样一来，当一个对象改变状态，依赖它的对象都会受到通知，并自动更新</li>
+</ol>
+<p>要点</p>
+<ol>
+<li>观察者模式定义了对象之间一对多的关系</li>
+<li>主题（也就是可观察者）用一个共同的接口来更新观察者</li>
+<li>观察者和可观察者之间松耦合方式结合，可观察者不知道观察者的细节，只知道观察者实现了观察者接口</li>
+<li>使用此模式时，你可以从被观察者处推或者拉数据（然而推的方式被认为更“正确”）</li>
+<li>有多个观察者时，不可以依赖特定的通知次序</li>
+<li>java 有很多观察者模式的实现，包括了通用的java.util.Observable</li>
+<li>要注意java.util.Observable（是一个类）实现上带来的一些问题</li>
+<li>如果有必要的话，可以实现自己的Observable,这并不难，不要害怕</li>
+<li>Swing大量使用了观察者模式，许多GUI框架也是如此</li>
+<li>此模式也被应用在许多地方，例如JavaBeans,RMI</li>
+</ol>
+
       
 
       
